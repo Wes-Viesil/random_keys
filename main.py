@@ -44,14 +44,14 @@ def main(page: ft.Page):
         conn.commit()
         conn.close()
 
-    
+    # Página
     page.title = "Random Key"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER 
     page.theme_mode = ft.ThemeMode.LIGHT # Deixa a página clara
-    
+    # Campos de texto
     username_input = ft.TextField(label="Username", width=300)
     password_input = ft.TextField(label="Password", width=300, password=True)
-
+    # Botão
     login_button = ft.ElevatedButton("Login", on_click=login)
 
     key_text = ft.Text("")
