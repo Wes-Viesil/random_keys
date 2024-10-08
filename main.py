@@ -1,4 +1,4 @@
-# Chave aleatória web integrado com o Access (Tabela1, Chaves)
+# Chave aleatória web integrado com o banco de dados Access (Tabela1, Chaves)
 
 import flet as ft
 import secrets
@@ -8,7 +8,7 @@ import pyodbc
 # Função principal
 def main(page: ft.Page):
 
-    # Funçõo login
+    # Função login
     def login(event):
         username = username_input.value
         password = password_input.value
